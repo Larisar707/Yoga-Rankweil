@@ -1,11 +1,58 @@
  <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoga in Rankweil | [Ihr Name]</title>
-    <meta name="description" content="Yoga in Rankweil und Online via Zoom. Entspannende und kräftigende Yoga-Kurse für Anfänger und Fortgeschrittene in Vorarlberg.">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yoga in Rankweil | [Ihr Name]</title>
+<meta name="description" content="Yoga in Rankweil und Online via Zoom. Yoga Kurse in Rankweil und online für alle Levels.">
+<link rel="stylesheet" href="style.css">
+<style>
+
+/* ===== Hero Section ===== */
+.hero-container {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    background-color: #f4f1ed; /* fallback color */
+}
+
+.hero-container img {
+    /* makes the image fit fully without cropping */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.hero-text h1 {
+    font-size: 2.8em;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.3em;
+    margin-top: 8px;
+}
+
+.hero-buttons {
+    margin-top: 18px;
+}
+
+.hero-buttons .btn {
+    margin: 0 8px;
+}
+
+</style>
 </head>
 <body>
 
@@ -14,24 +61,33 @@
     <a href="#home">Home</a>
     <a href="#kurse">Kurse</a>
     <a href="#kontakt">Kontakt</a>
+    <span class="lang-switcher">
+        <a href="index.html">DE</a> |
+        <a href="index-en.html">EN</a> |
+        <a href="index-ru.html">RU</a>
+    </span>
 </nav>
 
 <!-- Hero Section -->
-<header id="home">
-    <h1>Yoga in Rankweil</h1>
-    <p>Finde Balance, Kraft und innere Ruhe – im Studio & Online via Zoom</p>
-    <div class="buttons">
-        <a href="#kurse" class="btn">Kurse ansehen</a>
-        <a href="#kontakt" class="btn">Platz reservieren</a>
+<div class="hero-container" id="home">
+    <img src="https://images.news18.com/webstories/uploads/2024/10/image-2024-10-f13eaf8f1ad3e51dcf1cb24167456175.png" alt="Yoga Pose with Alps Background">
+    <div class="hero-text">
+        <h1>Yoga in Rankweil</h1>
+        <p>Finde Balance, Kraft und innere Ruhe – im Studio & online</p>
+        <div class="hero-buttons">
+            <a href="#kurse" class="btn">Kurse ansehen</a>
+            <a href="#kontakt" class="btn">Platz reservieren</a>
+        </div>
     </div>
-</header>
+</div>
 
 <!-- Welcome Section -->
 <section>
     <h2>Willkommen</h2>
     <p>
-        Ich begleite dich auf deinem Yoga-Weg – mit achtsamen, stärkenden und entspannenden 
-        Einheiten für Anfänger und Fortgeschrittene in Rankweil und online.
+        Ich begleite dich auf deinem Yoga‑Weg – mit achtsamen, stärkenden und
+        entspannenden Yoga‑Einheiten für Anfänger und Fortgeschrittene in Rankweil
+        und online.
     </p>
 </section>
 
@@ -45,11 +101,11 @@
         </div>
         <div class="box">
             <h3>💻 Online via Zoom</h3>
-            <p>Live Yoga-Kurse bequem von Zuhause aus.</p>
+            <p>Live Yoga‑Kurse bequem von zuhause aus.</p>
         </div>
         <div class="box">
             <h3>🌿 Für jedes Level</h3>
-            <p>Sanftes Yoga, Flow, Rücken-Yoga und mehr.</p>
+            <p>Sanftes Yoga, Flow, Rücken‑Yoga und mehr.</p>
         </div>
     </div>
 </section>

@@ -1,0 +1,115 @@
+/* ===== Global Styles ===== */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f1ed;
+    color: #3e3e3e;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===== Navigation ===== */
+nav {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    margin: 0 20px;
+    color: #555;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #b59b84;
+}
+
+/* ===== Header ===== */
+header {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+/* ===== Sections ===== */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+/* ===== Cards / Boxes ===== */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.price {
+    font-size: 1.8em;
+    margin: 20px 0;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #b59b84;
+    color: white;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #9e866f;
+}
+
+/* ===== Booking Section ===== */
+#booking {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #e9e4df;
+    padding: 30px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #555;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* ===== Responsive ===== */
+@media(max-width: 768px) {
+    .box {
+        width: 90%;
+    }
+}

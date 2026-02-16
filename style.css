@@ -43,7 +43,8 @@ header {
     text-align: center;
     padding: 0; /* remove old padding */
     height: 100vh; /* full viewport height */
-    background: url('images/image1.png') no-repeat center center/cover;
+    background: url('Yoga-Rankweil/images/image1.png') no-repeat center center/cover;
+
     display: flex;
     flex-direction: column;
     justify-content: center;

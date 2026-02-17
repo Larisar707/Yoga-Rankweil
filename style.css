@@ -1,13 +1,15 @@
  /* Full-page background image */
- body {
+  body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: url('images/PHOTO- Luda.jpg') no-repeat center top fixed;  /* Adjust position to 'top' */
-    background-size: cover;  /* Ensures the background covers the full page */
-    background-attachment: fixed;  /* Keeps the image fixed during scrolling */
-    background-position: center top;  /* Moves the image to the top-center */
+    background: url('images/PHOTO- Luda.jpg') no-repeat center center fixed;
+    background-size: contain;  /* Adjusts the image size to fit within the container while maintaining aspect ratio */
+    background-attachment: fixed;  /* Keeps the image fixed while scrolling */
+    background-position: center;  /* Keeps the image centered */
     height: 100vh;  /* Ensure the page takes up full height */
+    background-color: #f0f0f0;  /* Fallback background color in case the image doesn't fill the area */
 }
+
 
 
 /* Navigation */

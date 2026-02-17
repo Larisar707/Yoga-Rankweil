@@ -4,59 +4,165 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yoga in Rankweil | [Ihr Name]</title>
-<meta name="description" content="Yoga in Rankweil und Online via Zoom. Yoga Kurse in Rankweil und online für alle Levels.">
-<link rel="stylesheet" href="style.css">
+<meta name="description" content="Yoga in Rankweil und Online via Zoom. Yoga Kurse für alle Levels.">
+
 <style>
 
-/* ===== Hero Section ===== */
-.hero-container {
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-    background-color: #f4f1ed; /* fallback color */
+/* ===== Global ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f1ed;
+    color: #3e3e3e;
 }
 
-.hero-container img {
-    /* makes the image fit fully without cropping */
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.hero-text {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    color: white;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
-}
-
-.hero-text h1 {
-    font-size: 2.8em;
+h1, h2, h3 {
     margin: 0;
 }
 
-.hero-text p {
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===== Navigation ===== */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(255,255,255,0.95);
+    padding: 18px 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav a {
+    margin: 0 18px;
+    color: #555;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #b59b84;
+}
+
+.lang-switcher {
+    margin-left: 20px;
+    font-size: 0.9em;
+}
+
+/* ===== HERO ===== */
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://images.news18.com/webstories/uploads/2024/10/image-2024-10-f13eaf8f1ad3e51dcf1cb24167456175.png');
+    background-size: cover;
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+}
+
+.hero-content p {
+    margin-top: 15px;
     font-size: 1.3em;
-    margin-top: 8px;
 }
 
-.hero-buttons {
-    margin-top: 18px;
+.buttons {
+    margin-top: 25px;
 }
 
-.hero-buttons .btn {
-    margin: 0 8px;
+.btn {
+    display: inline-block;
+    padding: 12px 26px;
+    margin: 8px;
+    background-color: #b59b84;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #9e866f;
+}
+
+/* ===== Sections ===== */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #e9e4df;
+    padding: 30px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* ===== Responsive ===== */
+@media(max-width: 768px) {
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .box {
+        width: 90%;
+    }
+
 }
 
 </style>
 </head>
 <body>
 
-<!-- Navigation -->
+<!-- NAVIGATION -->
 <nav>
     <a href="#home">Home</a>
     <a href="#kurse">Kurse</a>
@@ -68,57 +174,55 @@
     </span>
 </nav>
 
-<!-- Hero Section -->
-<div class="hero-container" id="home">
-    <img src="https://images.news18.com/webstories/uploads/2024/10/image-2024-10-f13eaf8f1ad3e51dcf1cb24167456175.png" alt="Yoga Pose with Alps Background">
-    <div class="hero-text">
+<!-- HERO -->
+<header id="home">
+    <div class="hero-content">
         <h1>Yoga in Rankweil</h1>
         <p>Finde Balance, Kraft und innere Ruhe – im Studio & online</p>
-        <div class="hero-buttons">
+        <div class="buttons">
             <a href="#kurse" class="btn">Kurse ansehen</a>
             <a href="#kontakt" class="btn">Platz reservieren</a>
         </div>
     </div>
-</div>
+</header>
 
-<!-- Welcome Section -->
+<!-- WILLKOMMEN -->
 <section>
     <h2>Willkommen</h2>
     <p>
-        Ich begleite dich auf deinem Yoga‑Weg – mit achtsamen, stärkenden und
-        entspannenden Yoga‑Einheiten für Anfänger und Fortgeschrittene in Rankweil
-        und online.
+        Ich begleite dich auf deinem Yoga-Weg – mit achtsamen, stärkenden und
+        entspannenden Yoga-Einheiten für Anfänger und Fortgeschrittene
+        in Rankweil und online.
     </p>
 </section>
 
-<!-- Courses Section -->
+<!-- KURSE -->
 <section id="kurse">
     <h2>Kursangebot</h2>
     <div class="grid">
         <div class="box">
-            <h3>🧘‍♀️ Studio Klassen</h3>
-            <p>Persönliche Betreuung in kleinen Gruppen in Rankweil.</p>
+            <h3>🧘 Studio Klassen</h3>
+            <p>Persönliche Betreuung in kleinen Gruppen.</p>
         </div>
         <div class="box">
             <h3>💻 Online via Zoom</h3>
-            <p>Live Yoga‑Kurse bequem von zuhause aus.</p>
+            <p>Live Yoga bequem von zuhause.</p>
         </div>
         <div class="box">
             <h3>🌿 Für jedes Level</h3>
-            <p>Sanftes Yoga, Flow, Rücken‑Yoga und mehr.</p>
+            <p>Sanftes Yoga, Flow, Rücken-Yoga.</p>
         </div>
     </div>
 </section>
 
-<!-- Contact Section -->
+<!-- KONTAKT -->
 <section id="kontakt">
     <h2>Jetzt anmelden</h2>
-    <p>Schreibe mir oder reserviere deinen Platz direkt online.</p>
     <p>Email: info@deinyoga.at</p>
-    <p>Ort: Rankweil, Vorarlberg</p>
+    <p>Rankweil, Vorarlberg</p>
 </section>
 
-<!-- Footer -->
+<!-- FOOTER -->
 <footer>
     © 2026 [Ihr Name] Yoga Rankweil |
     <a href="#">Impressum</a> |

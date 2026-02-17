@@ -3,35 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt | Yoga Rankweil</title>
+    <title>Yoga Rankweil</title>
 
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-    <a href="index.html">Start</a>
-    <a href="kurse.html">Kurse</a>
-    <a href="contact.html">Kontakt</a>
-    <a href="impressum.html">Impressum</a>
+<!-- Navigation with push buttons -->
+<nav class="nav-buttons">
+    <a href="index.html" class="btn">Start</a>
+    <a href="index_en.html" class="btn">English</a>
+    <a href="index_ru.html" class="btn">Русский</a>
+    <a href="kurse.html" class="btn">Kurse</a>
+    <a href="impressum.html" class="btn">Impressum</a>
+    <a href="#contact" class="btn">Kontakt</a>
 </nav>
 
-<section>
-    <h1>Kontakt</h1>
+<!-- Spacer so content is not hidden under fixed nav -->
+<div style="height: 80px;"></div>
+
+<!-- Hero Section -->
+<section class="hero">
+    <img src="hero-image.jpg" class="hero-img" alt="Yoga in Rankweil">
+    <div class="hero-content">
+        <h1>Willkommen zu Yoga Rankweil</h1>
+        <p>Dein Ort für Ruhe, Kraft und Flexibilität</p>
+        <div class="buttons">
+            <a href="kurse.html" class="btn">Zu den Kursen</a>
+            <a href="#contact" class="btn">Kontakt</a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <h2>Über uns</h2>
+    <p>Bei Yoga Rankweil bieten wir Yoga-Kurse für alle Levels – von Anfänger bis Fortgeschrittene. Unser Ziel ist es, Körper, Geist und Seele in Einklang zu bringen.</p>
+</section>
+
+<!-- Courses Preview Section -->
+<section id="courses">
+    <h2>Kurse</h2>
+    <div class="grid">
+        <div class="box">
+            <h3>Hatha Yoga</h3>
+            <p>Sanfte Übungen für Flexibilität und Entspannung.</p>
+        </div>
+        <div class="box">
+            <h3>Vinyasa Yoga</h3>
+            <p>Fließende Bewegungen für Kraft und Ausdauer.</p>
+        </div>
+        <div class="box">
+            <h3>Online Yoga</h3>
+            <p>Trainiere bequem von Zuhause aus via Zoom.</p>
+        </div>
+    </div>
+    <div style="margin-top:30px;">
+        <a href="kurse.html" class="btn">Alle Kurse ansehen</a>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Kontakt</h2>
     <p>Ich freue mich auf deine Nachricht.</p>
 
     <div class="box" style="max-width:600px; margin:auto;">
         <form action="mailto:info@deinyoga.at" method="post" enctype="text/plain">
-            
             <label>Name</label><br>
-            <input type="text" name="name" required style="width:100%; padding:10px; margin:10px 0 20px;"><br>
+            <input type="text" name="name" required><br>
 
             <label>Email</label><br>
-            <input type="email" name="email" required style="width:100%; padding:10px; margin:10px 0 20px;"><br>
+            <input type="email" name="email" required><br>
 
             <label>Nachricht</label><br>
-            <textarea name="message" rows="5" required style="width:100%; padding:10px; margin:10px 0 20px;"></textarea><br>
+            <textarea name="message" rows="5" required></textarea><br>
 
             <button type="submit" class="btn">Nachricht senden</button>
         </form>
@@ -43,8 +93,9 @@
     </div>
 </section>
 
+<!-- Footer -->
 <footer>
-    © 2026 Ludmila Sonser Yoga Rankweil |
+    © 2026 Ludmila Sonser Yoga Rankweil | 
     <a href="impressum.html">Impressum</a>
 </footer>
 

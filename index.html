@@ -1,31 +1,27 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yoga in Rankweil | [Ihr Name]</title>
-<meta name="description" content="Yoga in Rankweil und Online via Zoom. Yoga Kurse für alle Levels.">
+<title>Yoga in Rankweil</title>
 
 <style>
 
-/* ===== Global ===== */
-body {
+/* ===== RESET ===== */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
     background-color: #f4f1ed;
     color: #3e3e3e;
+    line-height: 1.6;
 }
 
-h1, h2, h3 {
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* ===== Navigation ===== */
+/* ===== NAVIGATION ===== */
 nav {
     position: fixed;
     width: 100%;
@@ -41,6 +37,7 @@ nav a {
     margin: 0 18px;
     color: #555;
     font-weight: 500;
+    text-decoration: none;
 }
 
 nav a:hover {
@@ -53,55 +50,63 @@ nav a:hover {
 }
 
 /* ===== HERO ===== */
-header {
-    height: 100vh;
-    width: 100%;
-    background-image: url('https://images.news18.com/webstories/uploads/2024/10/image-2024-10-f13eaf8f1ad3e51dcf1cb24167456175.png');
-    background-size: cover;
-    background-position: center 70%;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.hero {
     position: relative;
-    color: white;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
 }
 
-header::after {
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* FULL IMAGE visible */
+}
+
+/* Overlay */
+.hero::after {
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(0,0,0,0.35);
+    z-index: 1;
 }
 
 .hero-content {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
     z-index: 2;
-    max-width: 800px;
+    padding: 0 20px;
 }
 
 .hero-content h1 {
     font-size: 3em;
+    margin-bottom: 15px;
 }
 
 .hero-content p {
-    margin-top: 15px;
     font-size: 1.3em;
 }
 
+/* ===== BUTTONS ===== */
 .buttons {
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .btn {
     display: inline-block;
-    padding: 12px 26px;
+    padding: 12px 28px;
     margin: 8px;
     background-color: #b59b84;
     color: white;
     border-radius: 30px;
     font-weight: bold;
+    text-decoration: none;
     transition: 0.3s;
 }
 
@@ -109,12 +114,16 @@ header::after {
     background-color: #9e866f;
 }
 
-/* ===== Sections ===== */
+/* ===== SECTIONS ===== */
 section {
     max-width: 1000px;
     margin: auto;
     padding: 80px 20px;
     text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
 }
 
 .grid {
@@ -133,7 +142,7 @@ section {
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
-/* ===== Footer ===== */
+/* ===== FOOTER ===== */
 footer {
     background-color: #e9e4df;
     padding: 30px;
@@ -141,7 +150,7 @@ footer {
     font-size: 0.9em;
 }
 
-/* ===== Responsive ===== */
+/* ===== RESPONSIVE ===== */
 @media(max-width: 768px) {
 
     .hero-content h1 {
@@ -168,14 +177,18 @@ footer {
     <a href="#kurse">Kurse</a>
     <a href="#kontakt">Kontakt</a>
     <span class="lang-switcher">
-        <a href="index.html">DE</a> |
-        <a href="index-en.html">EN</a> |
-        <a href="index-ru.html">RU</a>
+        <a href="#">DE</a> |
+        <a href="#">EN</a> |
+        <a href="#">RU</a>
     </span>
 </nav>
 
 <!-- HERO -->
-<header id="home">
+<header class="hero" id="home">
+    <img src="https://images.news18.com/webstories/uploads/2024/10/image-2024-10-f13eaf8f1ad3e51dcf1cb24167456175.png"
+         alt="Yoga in the Alps"
+         class="hero-img">
+
     <div class="hero-content">
         <h1>Yoga in Rankweil</h1>
         <p>Finde Balance, Kraft und innere Ruhe – im Studio & online</p>
@@ -186,17 +199,17 @@ footer {
     </div>
 </header>
 
-<!-- WILLKOMMEN -->
+<!-- WELCOME -->
 <section>
     <h2>Willkommen</h2>
     <p>
-        Ich begleite dich auf deinem Yoga-Weg – mit achtsamen, stärkenden und
-        entspannenden Yoga-Einheiten für Anfänger und Fortgeschrittene
-        in Rankweil und online.
+        Ich begleite dich auf deinem Yoga-Weg – mit achtsamen,
+        stärkenden und entspannenden Yoga-Einheiten
+        für Anfänger und Fortgeschrittene.
     </p>
 </section>
 
-<!-- KURSE -->
+<!-- COURSES -->
 <section id="kurse">
     <h2>Kursangebot</h2>
     <div class="grid">
@@ -215,7 +228,7 @@ footer {
     </div>
 </section>
 
-<!-- KONTAKT -->
+<!-- CONTACT -->
 <section id="kontakt">
     <h2>Jetzt anmelden</h2>
     <p>Email: info@deinyoga.at</p>
@@ -224,9 +237,7 @@ footer {
 
 <!-- FOOTER -->
 <footer>
-    © 2026 [Ihr Name] Yoga Rankweil |
-    <a href="#">Impressum</a> |
-    <a href="#">Datenschutz</a>
+    © 2026 Yoga Rankweil | Impressum | Datenschutz
 </footer>
 
 </body>

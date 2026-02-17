@@ -3,11 +3,11 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: url('images/PHOTO- Luda.jpg') no-repeat center center fixed;
-    background-size: cover;  /* Ensures the image covers the entire page */
+    background-size: contain;  /* Ensures the image fits fully without distortion */
     background-attachment: fixed;  /* Keeps the image fixed while scrolling */
     background-position: center center;  /* Centers the image */
     height: 100vh;  /* Ensure the page takes up full height */
-    background-color: #f0f0f0;  /* Fallback background color in case the image doesn't fill the area */
+    background-color: #f0f0f0;  /* Fallback background color */
 }
 
 /* Navigation Bar Styles */

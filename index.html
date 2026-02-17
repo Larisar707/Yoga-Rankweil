@@ -1,91 +1,51 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoga in Rankweil</title>
+    <title>Kontakt | Yoga Rankweil</title>
 
-    <!-- CONNECTED CSS FILE -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- NAVIGATION -->
 <nav>
-    <a href="#home">Home</a>
-    <a href="#kurse">Kurse</a>
-    <a href="#kontakt">Kontakt</a>
-    <span class="lang-switcher">
-      <a href="index.html">DE</a> | 
-      <a href="index_en.html">EN</a> | 
-      <a href="index_ru.html">RU</a>
-</span>
-
-
+    <a href="index.html">Start</a>
+    <a href="kurse.html">Kurse</a>
+    <a href="contact.html">Kontakt</a>
+    <a href="impressum.html">Impressum</a>
 </nav>
 
-<!-- HERO -->
-<header class="hero" id="home">
-    <img 
-        src="https://images.news18.com/webstories/uploads/2024/10/image-2024-10-f13eaf8f1ad3e51dcf1cb24167456175.png"
-        alt="Yoga in the Alps"
-        class="hero-img"
-    >
-
-    <div class="hero-content">
-        <h1>Yoga in Rankweil</h1>
-        <p>Finde Balance, Kraft und innere Ruhe – im Studio & online</p>
-
-        <div class="buttons">
-            <a href="#kurse" class="btn">Kurse ansehen</a>
-            <a href="#kontakt" class="btn">Platz reservieren</a>
-        </div>
-    </div>
-</header>
-
-<!-- WELCOME -->
 <section>
-    <h2>Willkommen</h2>
-    <p>
-        Ich begleite dich auf deinem Yoga-Weg – mit achtsamen,
-        stärkenden und entspannenden Yoga-Einheiten
-        für Anfänger und Fortgeschrittene.
-    </p>
-</section>
+    <h1>Kontakt</h1>
+    <p>Ich freue mich auf deine Nachricht.</p>
 
-<!-- COURSES -->
-<section id="kurse">
-    <h2>Kursangebot</h2>
+    <div class="box" style="max-width:600px; margin:auto;">
+        <form action="mailto:info@deinyoga.at" method="post" enctype="text/plain">
+            
+            <label>Name</label><br>
+            <input type="text" name="name" required style="width:100%; padding:10px; margin:10px 0 20px;"><br>
 
-    <div class="grid">
-        <div class="box">
-            <h3>🧘 Studio Klassen</h3>
-            <p>Persönliche Betreuung in kleinen Gruppen.</p>
-        </div>
+            <label>Email</label><br>
+            <input type="email" name="email" required style="width:100%; padding:10px; margin:10px 0 20px;"><br>
 
-        <div class="box">
-            <h3>💻 Online via Zoom</h3>
-            <p>Live Yoga bequem von zuhause.</p>
-        </div>
+            <label>Nachricht</label><br>
+            <textarea name="message" rows="5" required style="width:100%; padding:10px; margin:10px 0 20px;"></textarea><br>
 
-        <div class="box">
-            <h3>🌿 Für jedes Level</h3>
-            <p>Sanftes Yoga, Flow, Rücken-Yoga.</p>
-        </div>
+            <button type="submit" class="btn">Nachricht senden</button>
+        </form>
+    </div>
+
+    <div style="text-align:center; margin-top:50px;">
+        <p>Rankweil, Vorarlberg</p>
+        <p>Email: info@deinyoga.at</p>
     </div>
 </section>
 
-<!-- CONTACT -->
-<section id="kontakt">
-    <h2>Jetzt anmelden</h2>
-    <p>Email: info@deinyoga.at</p>
-    <p>Rankweil, Vorarlberg</p>
-</section>
-
-<!-- FOOTER -->
 <footer>
-    © 2026 Yoga Rankweil | Impressum | Datenschutz
+    © 2026 Ludmila Sonser Yoga Rankweil |
+    <a href="impressum.html">Impressum</a>
 </footer>
 
 </body>

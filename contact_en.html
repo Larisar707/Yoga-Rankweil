@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Yoga Rankweil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="kurse.html">Courses</a>
+    <a href="contact.html">Contact</a> 
+    <a href="impressum.html">Imprint</a>
+</nav>
+
+<!-- LANGUAGE BUTTONS -->
+<div class="lang-switcher">
+    <a href="contact.html">DE</a> | 
+    <a href="contact_en.html">EN</a> | 
+    <a href="contact_ru.html">RU</a>
+</div>
+
+<section>
+    <h1>Contact</h1>
+    <p>I look forward to your message.</p>
+
+    <div class="box" style="max-width:600px; margin:auto;">
+        <!-- Updated form action with Formspree URL -->
+         <form action="https://formspree.io/f/mkovzzdv" method="POST" onsubmit="window.location='thank-you.html';">
+            <label>Name</label><br>
+            <input type="text" name="name" required style="width:100%; padding:10px; margin:10px 0 20px;"><br>
+
+            <label>Email</label><br>
+            <input type="email" name="email" required style="width:100%; padding:10px; margin:10px 0 20px;"><br>
+
+            <label>Message</label><br>
+            <textarea name="message" rows="5" required style="width:100%; padding:10px; margin:10px 0 20px;"></textarea><br>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+
+    <div style="text-align:center; margin-top:50px;">
+        <p>Rankweil, Vorarlberg</p>
+        <p>Telephone: +43 699 17710511</p>
+        <p>Email: Liudmila.soenser@gmail.com</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Liudmila Soenser Yoga Rankweil | <a href="impressum.html">Imprint</a>
+</footer>
+
+</body>
+</html>
